@@ -6,14 +6,17 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
-    "axios": "^1.7.9",
-    "@clipdeck/types": "file:../shared-types"
+    "@clipdeck/types": "file:../shared-types",
+    "axios": "^1.7.9"
   },
   "devDependencies": {
+    "@types/node": "^22",
     "typescript": "^5.7.2",
-    "@types/node": "^22"
+    "vitest": "^4.0.18"
   }
 }
